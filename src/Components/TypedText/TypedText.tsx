@@ -17,6 +17,7 @@ const TypedText = ({ texts, isTitle }: TypedTextProps) => {
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 50,
+      showCursor: false,
     });
     return () => {
       typed.destroy();
