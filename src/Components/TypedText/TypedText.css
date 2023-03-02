@@ -1,3 +1,7 @@
-.typedtext {
+span {
   color: white;
+}
+
+.typedtext-large {
+  font-size: 24px;
 }
