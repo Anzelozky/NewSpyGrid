@@ -2,6 +2,8 @@ import "./ProfileGrid.css";
 
 import TypedText from "../TypedText/TypedText";
 
+import { randomEyeColor } from "../../utils/misc";
+
 type ProfileGridProps = {
   agent?: Object | any;
   children?: Array<JSX.Element>;
@@ -30,7 +32,7 @@ const ProfileGrid = ({ agent, children }: ProfileGridProps) => {
         <TypedText texts={[`Country: ${agent.location.country}`]} />
         <TypedText texts={[`Gender: ${agent.gender}`]} />
         <TypedText texts={[`Date of birth: ${agent.dob.date}`]} />
-        <TypedText texts={[`Eye color: green`]} />
+        <TypedText texts={[`Eye color: ${randomEyeColor}`]} />
         <TypedText
           texts={[`Timezone offset: ${agent.location.timezone.offset}`]}
         />
