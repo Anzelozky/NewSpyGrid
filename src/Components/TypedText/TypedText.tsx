@@ -3,11 +3,11 @@ import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
 type TypedTextProps = {
+  isTitle: boolean;
   texts: Array<string>;
 };
 
-const TypedText = ({ texts }: TypedTextProps) => {
-  // Create Ref element.
+const TypedText = ({ texts, isTitle }: TypedTextProps) => {
   const el = useRef(null);
 
   useEffect(() => {
@@ -18,14 +18,13 @@ const TypedText = ({ texts }: TypedTextProps) => {
       backSpeed: 50,
       backDelay: 50,
     });
-
-    // Destropying
     return () => {
       typed.destroy();
     };
   }, []);
 
-  return <span className="typedtext" ref={el}></span>;
+  if (isTitle) return <span className="typedtext-large" ref={el} />;
+  return <span ref={el} />;
 };
 
 export default TypedText;
