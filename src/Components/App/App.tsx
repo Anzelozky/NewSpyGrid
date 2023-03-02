@@ -7,7 +7,6 @@ import { useAgent } from "../../Hooks/useAgent";
 
 export default function App() {
   const [agent, isLoading, hasError] = useAgent();
-  console.log(agent, isLoading, hasError);
 
   if (!isLoading) {
     return (

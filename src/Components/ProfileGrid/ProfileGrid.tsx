@@ -9,7 +9,7 @@ type ProfileGridProps = {
 
 const ProfileGrid = ({ agent, children }: ProfileGridProps) => {
   if (!agent) return <p>... loading</p>;
-  console.log(agent);
+
   return (
     <div className="profilegrid">
       <div className="profile-picture">
