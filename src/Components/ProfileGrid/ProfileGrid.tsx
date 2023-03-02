@@ -4,10 +4,9 @@ import TypedText from "../TypedText/TypedText";
 
 type ProfileGridProps = {
   agent?: Object | any;
-  children?: Array<JSX.Element>;
 };
 
-const ProfileGrid = ({ agent, children }: ProfileGridProps) => {
+const ProfileGrid = ({ agent }: ProfileGridProps) => {
   if (!agent) return <p>... loading</p>;
 
   return (
