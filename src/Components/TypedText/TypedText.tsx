@@ -3,7 +3,7 @@ import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
 type TypedTextProps = {
-  isTitle: boolean;
+  isTitle?: boolean;
   texts: Array<string>;
 };
 
