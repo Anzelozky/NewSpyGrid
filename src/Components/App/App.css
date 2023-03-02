@@ -5,3 +5,20 @@
 .App {
   font-family: "Courier New", Courier, monospace;
 }
+
+.next-asset {
+  font-size: 20px;
+  padding: 1rem;
+  max-width: 100px;
+
+  border: none;
+  border-radius: 10px;
+  background: #6c5ed9;
+  box-shadow: 5px 5px 10px #5c50b8, -5px -5px 10px #7c6cfa;
+}
+
+.next-asset:active {
+  border-radius: 10px;
+  background: #6c5ed9;
+  box-shadow: inset 5px 5px 10px #5c50b8, inset -5px -5px 10px #7c6cfa;
+}
